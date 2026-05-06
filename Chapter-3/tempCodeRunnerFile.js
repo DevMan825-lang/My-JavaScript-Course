@@ -1,0 +1,11 @@
+var date = new Date(); 
+        var FullYear = date.getFullYear(); 
+        var getAllMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; 
+        var todayDate = date.getDate(); 
+        var day = date.getDay(); 
+        var getFullTime = date.toLocaleTimeString(); 
+        console.log("FullYear : " + FullYear); 
+        console.log("Month : " + getAllMonth[date.getMonth()]); 
+        console.log("Date : " + todayDate); 
+        console.log("Day : " + day); 
+        console.log("Time : " + getFullTime); 
