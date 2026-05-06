@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Regex Practice -->
+     <form>
+    <label for="username">UserName
+        <input type="text" name="username" pattern="[a-zA-Z0-9]{8,12}">
+        <input type="pin" pattern="[0-9]{4,8}">
+        <input type="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[0-9]{8,16})">
+        <input type="mail" pattern="[a-z]">
+    </label>
+    <input type="submit" value="submit"/>
+    </form>
+    <script src="Main.js"></script>
+</body>
+</html>
