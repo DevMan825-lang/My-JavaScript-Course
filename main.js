@@ -1,180 +1,50 @@
-// Loops : 
-//There are 4 types of loops in JavaScript : 
-// 1) While Loop. 
-// 2) Do-While Loop 
-// 3) For Loop 
-// 4) For Each Loop 
+// querySelectors 
+// var x = document.getElementById("demo").innerHTML = "Hello World";
+// console.log(x); 
 
-// Synatx of the while loop : 
-                // while(condition){
-                    // Increment 
-                    // Executable Program. 
-            //}
-
-            // Forwared Loop 
-            // var num = 0; 
-            // while(num < 100){
-            //     num++; 
-            //     console.log(num); 
-            // }
-
-            // Backward Loop 
-            // var num = 100; 
-            // while(num > 50){
-            //     num--; 
-            //     console.log(num); 
-            // }
-
-            // "Happy birthday to yo...!"
-            // var i = 0; 
-            // while(i < 1000){
-            //     i++; 
-            //     console.log("Happy birthday to you..!"); 
-            // }
+// querySelector return the 1st element that matches a CSS selector. 
+// var x = document.querySelector("p"); 
+// console.log(x); 
+// document.querySelector("p").style.backgroundColor = "red"; 
 
 
+// Selects class name with querySelector 
+// var x = document.querySelector("p.example"); 
+// console.log(x); 
 
-// Synatx of the do while loop : 
-                //do{
-                    // Increment 
-                    // Executable Program. 
-            //} while(condition)
+// var x = document.querySelector(".example"); 
+// console.log(x); 
 
-             // Forwared Loop 
-        //    var num = 0; 
-        //    do{
-        //         num++; 
-        //         console.log(num); 
-        //     } while(num < 100); 
-
-        // Backward Loop 
-        //    var num = 100; 
-        //    do{
-        //         num--; 
-        //         console.log(num); 
-        //     } while(num > 50); 
-
-         // "Happy birthday to yo...!"
-            // var i = 0; 
-            // do{
-            //     i++; 
-            //     console.log("Hax ++ppy birthday to you..!"); 
-            // }while(i < 1000); 
+// Selects Id name with querySelector 
+// var x = document.querySelector("#demo"); 
+// console.log(x); 
+// x.style.backgroundColor = "red"; 
 
 
-// Synatx of the for loop : 
-              // For Loop is most used loop in programming world. 
-              // Syntax :
-            //   for(varName, condition, iternation){
-            //     exceutable code
-            //   }
-
-            // Forward
-            // for(var i = 1; i <= 10; i++){
-            //     console.log(i); 
-            // }
-
-            // Backward 
-            //    for(var i = 10; i >= 1; i--){
-            //     console.log(i); 
-            // }
-
-
-            // "Happy birthday to yo...!"
-            // for(var i = 10; i >= 1; i--){
-            //     console.log("Happy birthday to yo...!"); 
-            // }
-
-
-// Synatx of the for each loop : 
-              // For Each Loop is used in array. 
-              // Syntax :
-              // ArrayVariable.forEach(functionName); 
-              // function functionName(items, index){
-                        // executable code 
-            //}
-
-            // Used in Array 
-            // var names = ["Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram"]; 
-            // names.forEach(myFunction); 
-            // function myFunction(names, index){
-            //     console.log(index + " " + names); 
-            // }
-
-            // Using For Loop 
-            // var names = ["Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram"]; 
-            // // console.log(names[1]); 
-            // for(var i = 0; i < 10; i++){
-            //     console.log(names[i]); 
-            // }
-
-             // Using For Loop 
-            // var names = ["Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram", "Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram", "Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram", "Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram", "Amit", "Rohit", "Priya", "Vishal", "Ravi", "Mohan", "Vijay", "Girish", "Hari", "Ram"]; 
-            // // console.log(names[1]); 
-            // for(var i = 0; i < names.length; i++){
-            //     console.log(names[i]); 
-            // }
-
-// Print String value in loop 
-
-            // var str = "Hello World"; 
-            // for(var i = 0; i < 11; i++){
-            //     console.log(str[i]); 
-            // }
-
-
-            
-            // var str = "m,dsfkjkldsfldsfodofgksdajashnsdkfdkgflkgfkldhjsakdsldfjsal;sd;lcvmkkljsdfijdf[krgsdkd;kmndfk;mfgklmgh"; 
-            // for(var i = 0; i < str.length; i++){
-            //     console.log(str[i]); 
-            // }
-
-
-// Infinite Loop :  
-            // for(var i = 0; i < 10; i--){
-            //     console.log(i); 
-            // }
-
-
-// var readline = require("readline"); 
-// var rl = readline.createInterface({
-//     input:process.stdin, 
-//     output:process.stdout
-// }); 
-// var number; 
-// do{
-// rl.question("Enter a positive number : ", function(number){ 
-       
-//             number++; 
-//             console.log(number); 
-      
-// }); 
-// }while(number > 0); 
-
-// Break and Continue 
-// for(var i = 1; i <= 10; i++){
-//     if(i == 5){
-//         break; 
-//     }
-//     console.log(i); 
+// Target Child Element in JavaScript...... 
+// function change(){
+//     var container = document.querySelector("div > p");
+//     console.log(container); 
+//     container.style.backgroundColor = "red"; 
+//     container.style.color = "#fff";  
 // }
 
-// for(var i = 1; i <= 10; i++){
-//     if(i == 5){
-//         continue; 
-//     }
-//     console.log(i); 
-// }
 
-// // Even Number 
-// // Write a program to print the even numbers between 0 to 100 
-// for(var i = 0; i <= 100; i += 2){
-//             console.log(i); 
-// }
+// Targeting attribute using the querySelector() : 
+// To target HTML attributes in JavaScript first 
+// write down your HTML tag then under the ([]) 
+// square barcket give the attribute name of 
+// the HTML tag.......... 
+// Syntax : tagName[attributeName]; 
+            // Ex: a[href]. 
+// var link_1 = document.querySelector("a[href]"); 
+// link_1.style.backgroundColor = "red"; 
+// var link_2 = document.querySelector("a[target]"); 
+// link_2.style.backgroundColor = "yellow"; 
+// var link_3 = document.querySelector("a[hreflang]"); 
+// link_3.style.backgroundColor = "green"; 
+// var link_4 = document.querySelector("a[rel]"); 
+// link_4.style.backgroundColor = "orange"; 
 
-// Odd Number 
-// Write a program to print the odd numbers between 0 to 100 
-// for(var i = 1; i <= 100; i += 2){
-//             console.log(i); 
-// }
 
+// document.querySelector("h3, h4").style.backgroundColor = "red"; 
